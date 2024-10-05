@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Urbanist } from "next/font/google";
 import "./globals.css";
+
+import type { Metadata } from "next";
+import { Urbanist } from "next/font/google";
+import localFont from "next/font/local";
 
 const lufga = localFont({
   src: [
@@ -21,15 +22,14 @@ const lufga = localFont({
       path: "./fonts/LufgaBold.ttf",
       weight: "700",
     },
-
   ],
   variable: "--font-lufga",
 });
 
 const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["600"],
-  variable: "--font-urbanist"
+  weight: ["600", "700", "800"],
+  variable: "--font-urbanist",
 });
 
 export const metadata: Metadata = {
@@ -44,9 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${lufga.variable} ${urbanist.className} antialiased`}
-      >
+      <body className={`${lufga.variable} ${urbanist.className} antialiased`}>
         {children}
       </body>
     </html>
