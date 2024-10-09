@@ -1,0 +1,80 @@
+:root {
+  --duration: calc(19 * 1.5s); /* 19 brands on each have 3 seconds for show*/
+}
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos:before,
+.logos:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.logos:before {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  left: 0;
+  filter: blur(2px);
+}
+.logos:after {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  right: 0;
+}
+.logos-slide {
+  display: flex;
+  flex-shrink: 0;
+  animation: var(--duration) slide infinite linear;
+  min-width: 100%;
+}
+
+.logos-slide img {
+  width: 100px;
+  height: 100px;
+  margin: 0 40px;
+  display: inline-flex;
+}
+
+.logos-slide.delay {
+  transform: translateX(100%);
+  animation-name: delay;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes delay {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

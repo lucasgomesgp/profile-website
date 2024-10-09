@@ -1,0 +1,42 @@
+.text-animated {
+  line-height: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+.text-animated p {
+  position: relative;
+  animation: text 14s ease infinite;
+}
+
+.text-animated p:hover {
+  animation-play-state: paused;
+  cursor: progress;
+}
+@keyframes text {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -80px;
+  }
+  45% {
+    top: -80px;
+  }
+  55% {
+    top: -140px;
+  }
+  60% {
+    top: -140px;
+  }
+
+  75% {
+    top: -210px;
+  }
+  85% {
+    top: -210px;
+  }
+}

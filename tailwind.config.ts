@@ -14,6 +14,8 @@ const config: Config = {
         "yankees-blue": "#1D2939",
         "charcoal": "#1D2939",
         "cadet-grey": "#98A2B3",
+        "white-light": "#F0F1F3",
+        "outline-button": "rgba(255, 255, 255, 0.10)",
       },
       fontFamily: {
         lufga: ["var(--font-lufga)"],
