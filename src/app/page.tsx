@@ -1,9 +1,11 @@
 import { ButtonCV } from "@/components/button-cv";
 import { ButtonContact } from "@/components/button-contact";
+import { FormMessage } from "@/components/form-message";
 import Image from "next/image";
 import Link from "next/link";
 import { LinkHeader } from "@/components/link-header";
 import { Logos } from "@/components/logos";
+import RectangleTechs from "@/components/rectangle-techs";
 import { Services } from "@/components/services";
 import { TextAnimated } from "@/components/text-animated";
 import aboutImg from "../assets/about.png";
@@ -82,6 +84,23 @@ export default function Home() {
         </div>
       </section>
       <Services />
+      <RectangleTechs
+        techs={[
+          "Design",
+          "UI",
+          "Frontend",
+          "Figma",
+          "Developer",
+          "UX",
+          "Tech",
+          "Github",
+          "CSS",
+          "Javascript",
+          "React.js",
+          "SEO",
+        ]}
+      />
+      <FormMessage />
       <footer className="flex pt-28 md:pt-[93px] flex-col items-center justify-center w-full bg-black-principal rounded-tr-[10px] rounded-tl-[10px] pb-5">
         <div className="flex gap-3  flex-wrap justify-center md:justify-between max-w-[396px] md:max-w-[680px] lg:max-w-[1200px] w-full">
           <h4 className="font-lufga text-white font-semibold text-[40px] w-[178px] md:w-[310px] lg:w-[500px]">

@@ -20,6 +20,18 @@ const config: Config = {
       fontFamily: {
         lufga: ["var(--font-lufga)"],
         urbanist: ["var(--font-urbanist)"]
+      },
+      animation: {
+        "scroll-infinite-texts": "text-animation-tech 10s linear infinite",
+      },
+      keyframes: {
+        "text-animation-tech": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-128px * 8))" }
+        }
+      },
+      boxShadow: {
+        "input": "0px 4px 150px 5px rgba(0, 0, 0, 0.25)"
       }
     },
   },
