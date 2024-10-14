@@ -5,12 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { LinkHeader } from "@/components/link-header";
 import { Logos } from "@/components/logos";
+import { Profile } from "@/components/profile";
 import RectangleTechs from "@/components/rectangle-techs";
 import { Services } from "@/components/services";
-import { TextAnimated } from "@/components/text-animated";
 import aboutImg from "../assets/about.png";
 import logoImg from "../assets/logo.svg";
-import profileImg from "../assets/profile.svg";
 
 export default function Home() {
   return (
@@ -45,23 +44,7 @@ export default function Home() {
           <span className="bg-white h-1 rounded-md w-8" />
         </button>
       </header>
-      <section className="flex flex-col lg:flex-row items-center justify-center relative mt-16 md:mt-[55px] lg:mt-0 mx-4 md:mx-0">
-        <div className="flex flex-col font-bold font-urbanist text-3xl md:text-5xl lg:text-6xl text-center px-[100px] lg:px-0">
-          <h1 className="">Sou Lucas,</h1>
-          <TextAnimated />
-        </div>
-        <div className="relative w-[396px] h-[458px] md:w-[680px] md:h-[872px] lg:w-[520px] lg:h-[600px]">
-          <Image
-            src={profileImg}
-            alt="Lucas Gomes"
-            quality={100}
-            height={872}
-            width={680}
-            className="w-full h-full"
-          />
-          <ButtonContact isInProfile />
-        </div>
-      </section>
+      <Profile />
       <Logos />
       <section className="flex items-center justify-center flex-wrap gap-32 md:gap-7 lg:flex-nowrap lg:gap-16 shadow-sm rounded-[30px] mx-4 md:mx-0">
         <Image
