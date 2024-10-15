@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
         console.log(__dirname);
         const result = await transporter.sendMail({
             from: `Lucas Gomes 👥 <${process.env.MAIL_USER}>`,
-            to: user.email,
+            to: process.env.MAIL_USER,
             subject: "Mensagem de contato de: " + user.email,
             text: user.message,
             html: htmlTemplate(user.name, user.message, user.email),

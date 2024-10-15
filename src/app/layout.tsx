@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import { ToastProvider } from "@/components/toast-provider";
 import { Urbanist } from "next/font/google";
 import localFont from "next/font/local";
 
@@ -45,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${lufga.variable} ${urbanist.className} antialiased`}>
-        {children}
+        <ToastProvider>{children}</ToastProvider>
       </body>
     </html>
   );
