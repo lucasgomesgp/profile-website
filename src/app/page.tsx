@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LinkHeader } from "@/components/link-header";
 import { Logos } from "@/components/logos";
+import { MenuToggle } from "@/components/menu-toggle";
 import { Profile } from "@/components/profile";
 import RectangleTechs from "@/components/rectangle-techs";
 import { Services } from "@/components/services";
@@ -38,15 +39,14 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <button className="flex flex-col gap-3 items-end lg:hidden pr-7">
-          <span className="bg-white h-1 rounded-md w-8" />
-          <span className="bg-white h-1 rounded-md w-4" />
-          <span className="bg-white h-1 rounded-md w-8" />
-        </button>
+        <MenuToggle />
       </header>
       <Profile />
       <Logos />
-      <section className="flex items-center justify-center flex-wrap gap-32 md:gap-7 lg:flex-nowrap lg:gap-16 shadow-sm rounded-[30px] mx-4 md:mx-0">
+      <section
+        className="flex items-center justify-center flex-wrap gap-32 md:gap-7 lg:flex-nowrap lg:gap-16 shadow-sm rounded-[30px] mx-4 md:mx-0"
+        id="about"
+      >
         <Image
           src={aboutImg}
           alt="Lucas Gomes"
