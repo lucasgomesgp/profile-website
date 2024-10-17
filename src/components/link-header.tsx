@@ -1,11 +1,18 @@
+"use client"
+
+import { HTMLProps, useEffect } from "react";
 import Link, { LinkProps } from "next/link";
-import { HTMLProps } from "react";
+
+import { removeHashFromUrl } from "@/utils/functions/removeHashFromUrl";
 
 type Props = {
   title: string;
 } & HTMLProps<HTMLAnchorElement> &
   LinkProps;
 export function LinkHeader({ title, href }: Props) {
+  useEffect(() => {
+    removeHashFromUrl();
+  }, []);
   return (
     <Link
       href={href}

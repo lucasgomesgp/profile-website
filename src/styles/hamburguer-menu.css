@@ -1,0 +1,26 @@
+.hamburguer_icon {
+  background-color: #ffffff;
+  border-radius: 6px;
+  width: 32px;
+  height: 4px;
+  display: initial;
+  transition: ease-in-out 500ms;
+}
+
+button > .hamburguer_icon:nth-child(2) {
+  width: 24px;
+  align-self: end;
+}
+button > .hamburguer_icon.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(-4px, 12px);
+  transition: 500ms ease-in-out;
+}
+
+button > .hamburguer_icon.clicked:nth-child(2) {
+  display: none;
+}
+
+button > .hamburguer_icon.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(0px, 16px);
+  transition: 500ms ease-in-out;
+}
