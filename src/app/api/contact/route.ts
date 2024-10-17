@@ -12,7 +12,6 @@ export async function POST(request: NextRequest) {
     const user = await request.json() as BodyObject;
 
     try {
-        console.log(__dirname);
         const result = await transporter.sendMail({
             from: `Lucas Gomes 👥 <${process.env.MAIL_USER}>`,
             to: process.env.MAIL_USER,

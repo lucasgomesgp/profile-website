@@ -12,11 +12,12 @@ type Props = {
 export function LinkHeader({ title, href }: Props) {
   useEffect(() => {
     removeHashFromUrl();
-  }, []);
+  }, [])
   return (
     <Link
       href={href}
       className="text-white hover:bg-purple-principal px-10 py-5 rounded-full transition-colors hidden lg:inline"
+      onClick={removeHashFromUrl}
     >
       {title}
     </Link>

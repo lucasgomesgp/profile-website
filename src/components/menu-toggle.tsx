@@ -2,10 +2,9 @@
 
 import "../styles/hamburguer-menu.css";
 
-import { useEffect, useState } from "react";
-
 import Link from "next/link";
 import { removeHashFromUrl } from "@/utils/functions/removeHashFromUrl";
+import { useState } from "react";
 
 export function MenuToggle() {
   const [menuToggleIsOpened, setMenuToggleIsOpened] = useState(false);
@@ -21,10 +20,8 @@ export function MenuToggle() {
   function handleHideMenuAfterClickOnLink() {
     setMenuToggleIsOpened(false)
     setHamburguerClasses("hamburguer_icon")
-  }
-  useEffect(() => {
     removeHashFromUrl();
-  }, [])
+  }
   return (
     <>
       <button

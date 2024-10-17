@@ -20,7 +20,7 @@ export default function Home() {
           <LinkHeader title="Início" href={"#home"} />
           <LinkHeader title="Sobre" href={"#about"} />
           <LinkHeader title="Serviços" href={"#services"} />
-          <Link href="/" className="hover:opacity-70 transition-opacity">
+          <Link href="#home" className="hover:opacity-70 transition-opacity">
             <Image src={logoImg} alt="Logo" className="[138px] h-[52px]" />
           </Link>
           <LinkHeader title="Projetos" href={"#projects"} />

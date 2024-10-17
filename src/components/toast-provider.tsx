@@ -1,7 +1,11 @@
 "use client";
 
-import { NotificationsProvider, setUpNotifications } from "reapop";
+import {
+  NotificationsProvider,
+  setUpNotifications,
+} from "reapop";
 
+import { Notification } from "./notification";
 import { ReactNode } from "react";
 
 setUpNotifications({
@@ -13,5 +17,11 @@ setUpNotifications({
   },
 });
 export function ToastProvider({ children }: { children: ReactNode }) {
-  return <NotificationsProvider>{children}</NotificationsProvider>;
+
+  return (
+    <NotificationsProvider>
+      <Notification />
+      {children}
+    </NotificationsProvider>
+  );
 }
