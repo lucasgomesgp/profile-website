@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-theme-color: #a53dff !important;
+}
 html {
   scroll-behavior: smooth;
+}
+
+.swiper-pagination {
+  bottom: -5px !important;
+}
+.swiper-pagination-bullet {
+  height: 14px !important;
+  width: 14px !important;
 }

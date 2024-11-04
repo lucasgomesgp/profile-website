@@ -84,6 +84,10 @@ const config: Config = {
       },
       boxShadow: {
         "input": "0px 4px 150px 5px rgba(0, 0, 0, 0.25)"
+      },
+      screens: {
+        "mobile_l": "425px",
+        "mobile_xl": "550px",
       }
     },
   },

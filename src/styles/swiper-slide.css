@@ -1,0 +1,24 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  width: 300px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+
+  @media screen and (min-width: 1024px) {
+    width: 458px;
+    height: 296px;
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 50px !important;
+  width: 50px !important;
+}
