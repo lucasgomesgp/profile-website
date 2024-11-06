@@ -1,7 +1,8 @@
 import { Projects } from "../types/projects";
+import { envSchema } from "@/schemas/server/env";
 
 export async function getProjectsFromCms() {
-    const data = await fetch(process.env.GRAPHQL_API_URL, {
+    const data = await fetch(envSchema.GRAPHQL_API_URL, {
         method: "POST",
         body: JSON.stringify({
             query: `

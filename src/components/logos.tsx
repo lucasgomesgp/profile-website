@@ -90,8 +90,6 @@ export function Logos() {
           height={100}
           alt="Postman"
         />
-      </div>
-      <div className="logos-slide delay">
         <Image src={"/icons/html5.svg"} width={100} height={100} alt="HTML5" />
         <Image src={"/icons/css3.svg"} width={100} height={100} alt="CSS3" />
         <Image
@@ -176,6 +174,7 @@ export function Logos() {
           height={100}
           alt="Postman"
         />
+
       </div>
     </section>
   );

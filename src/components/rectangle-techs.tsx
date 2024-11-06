@@ -16,7 +16,7 @@ export default function RectangleTechs({ techs }: { techs: Array<string> }) {
   return (
     <div className="mb-28 md:mb-[145px] lg:mb-56 group w-[110%] relative">
       <div className="relative bg-[linear-gradient(180deg,_#1C0C5B_7%,_#51729F_55.5%,_#FF00CCFA_100%)] w-[110%] h-20 z-[5] -rotate-[2.783deg] md:-rotate-[5.09deg] lg:rotate- overflow-hidden px-8 text-white font-lufga text-sm font-semibold">
-        <div className=" animate-scroll-infinite-texts w-full group-hover:[animation-play-state:paused] flex items-center h-20">
+        <div className="animate-scroll-infinite-texts w-full group-hover:[animation-play-state:paused] flex items-center h-20">
           {tagsStringToJSX()}
           {tagsStringToJSX()}
         </div>
