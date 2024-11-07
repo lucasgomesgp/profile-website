@@ -23,7 +23,7 @@ const config: Config = {
         urbanist: ["var(--font-urbanist)"]
       },
       animation: {
-        "scroll-infinite-texts": "text-animation-tech 10s linear infinite",
+        "scroll-infinite-texts": "text-animation-tech 20s linear infinite",
         "right": "moveRight 2s ease-in 1",
         "left": "moveLeft 2s ease-in 1",
         "opacity": "opacity 1.5s .5s ease-in 1 forwards",
@@ -33,7 +33,7 @@ const config: Config = {
       keyframes: {
         "text-animation-tech": {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(calc(-128px * 8))" }
+          "100%": { transform: "translateX(calc(-120px * 22))" }
         },
         "text-disapear": {
           "from": {

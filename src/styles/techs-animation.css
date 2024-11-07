@@ -1,0 +1,60 @@
+.rectangle {
+  background-image: linear-gradient(
+    180deg,
+    #1c0c5b 7%,
+    #51729f 55.5%,
+    #ff00ccfa 100%
+  );
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(-2.783deg);
+  height: 80px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    transform: rotate(-5.09deg);
+  }
+}
+.rectangle-second {
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(
+    180deg,
+    #1c0c5b 7%,
+    #51729f 55.5%,
+    #ff00ccfa 100%
+  );
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(3.118deg);
+  height: 80px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: blur(1px);
+
+  @media (min-width: 768px) {
+    transform: rotate(4.811deg);
+  }
+}
+
+.rectangle-animation {
+  width: calc(120px * 22);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  animation: text-animation-tech 30s 500ms linear infinite;
+}

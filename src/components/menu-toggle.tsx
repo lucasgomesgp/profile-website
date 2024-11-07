@@ -1,6 +1,6 @@
 "use client";
 
-import "../styles/hamburguer-menu.css";
+import "@/styles/hamburguer-menu.css";
 
 import Link from "next/link";
 import { removeHashFromUrl } from "@/utils/functions/removeHashFromUrl";

@@ -1,4 +1,4 @@
-import "../styles/text-animated.css";
+import "@/styles/text-animated.css";
 export function TextAnimated() {
   return (
     <div className="text-animated">
