@@ -26,7 +26,7 @@ export async function getProjectsFromCms() {
         }),
         headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.GRAPHQL_TOKEN}`,
+            Authorization: `Bearer ${envSchema.GRAPHQL_TOKEN}`,
         },
     });
     const result = await data.json();
