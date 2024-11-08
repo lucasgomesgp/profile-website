@@ -118,7 +118,6 @@ export default async function Home() {
           "CSS",
           "Javascript",
           "React.js",
-          "SEO",
         ]}
       />
       <section className="flex flex-col gap-[120px] md:gap-[174px] lg:gap-[133px] mt-[118px] mb-[186px] md:my-[160px] lg:mb-[312px] lg:mt-[100px]" id="experiences">

@@ -29,6 +29,7 @@ export default function RectangleTechs({ techs }: { techs: Array<string> }) {
           {tagsStringToJSX()}
           {tagsStringToJSX()}
           {tagsStringToJSX()}
+          {tagsStringToJSX()}
         </div>
       </div>
     </div>

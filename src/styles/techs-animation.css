@@ -52,9 +52,18 @@
 }
 
 .rectangle-animation {
-  width: calc(120px * 22);
+  width: calc(120px * 21);
   display: flex;
   align-items: center;
   gap: 0;
-  animation: text-animation-tech 30s 500ms linear infinite;
+  animation: textAnimationTech 15s 500ms linear infinite;
+}
+
+@keyframes textAnimationTech {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-120px * 21));
+  }
 }
