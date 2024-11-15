@@ -46,7 +46,7 @@ export function MenuToggle() {
         />
       </button>
       <nav
-        className={`flex flex-col items-center bg-black-principal w-full top-[20.5%] right-0 absolute z-[99] lg:hidden ${menuToggleIsOpened ? "inline" : "hidden"
+        className={`flex flex-col items-center bg-black-principal w-full top-[140px] right-0 absolute z-[99] lg:hidden ${menuToggleIsOpened ? "inline" : "hidden"
           }`}
       >
         <ul className=" flex flex-col items-center justify-center text-xl font-bold font-lufga text-white w-full list-none leading-7 letter">
@@ -61,6 +61,9 @@ export function MenuToggle() {
           </li>
           <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
             <Link href={"#projects"} onClick={handleHideMenuAfterClickOnLink}>Projetos</Link>
+          </li>
+          <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
+            <Link href={"#experiences"} onClick={handleHideMenuAfterClickOnLink}>Experiências</Link>
           </li>
           <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
             <Link href={"#contact"} onClick={handleHideMenuAfterClickOnLink}>Contato</Link>

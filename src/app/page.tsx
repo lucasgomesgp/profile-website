@@ -51,20 +51,8 @@ export default async function Home() {
             <Image src={logoImg} alt="Logo" className="[138px] h-[52px]" />
           </Link>
           <LinkHeader title="Projetos" href={"#projects"} />
+          <LinkHeader title="Experiências" href={"#experiences"} />
           <LinkHeader title="Contato" href={"#contact"} />
-          <div className="hidden gap-8 lg:flex lg:pr-6">
-            <button className="hover:opacity-70 transition-opacity">
-              <Image
-                src={"/icons/brazil.svg"}
-                width={60}
-                height={45}
-                alt="Brazil"
-              />
-            </button>
-            <button className="hover:opacity-70 transition-opacity">
-              <Image src={"/icons/eua.svg"} width={60} height={45} alt="EUA" />
-            </button>
-          </div>
         </div>
         <MenuToggle />
       </header>
@@ -122,7 +110,7 @@ export default async function Home() {
       />
       <section className="flex flex-col gap-[120px] md:gap-[174px] lg:gap-[133px] mt-[118px] mb-[186px] md:my-[160px] lg:mb-[312px] lg:mt-[100px]" id="experiences">
         <TitleSection title="Experiências" onCenter />
-        <div className="flex mt-40 gap-[150px] md:gap-0 md:mb-32 justify-between lg:gap-32 relative lg:flex-col lg:items-center min-h-full after:absolute after:w-full after:lg:w-[110%] after:border-[2px] after:border-dashed after:border-black after:top-[50%] after:translate-y-[-50%] after:lg:rotate-90">
+        <div className="flex mt-40 gap-[60px] mobile_l:gap-[100px] md:gap-0 md:mb-32 justify-between lg:gap-32 relative lg:flex-col lg:items-center min-h-full after:absolute after:w-full after:lg:w-[110%] after:border-[2px] after:border-dashed after:border-black after:top-[50%] after:translate-y-[-50%] after:lg:rotate-90">
           {
             myExperiences.map((experience, index) => {
               const isPair = ((index + 1) % 2) === 0;
@@ -168,6 +156,7 @@ export default async function Home() {
             <p className="text-white">Sobre</p>
             <p className="text-white">Serviços</p>
             <p className="text-white">Projetos</p>
+            <p className="text-white">Experiências</p>
             <p className="text-white">Contato</p>
           </div>
         </div>
