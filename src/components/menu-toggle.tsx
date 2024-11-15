@@ -2,7 +2,7 @@
 
 import "@/styles/hamburguer-menu.css";
 
-import Link from "next/link";
+import { LinkToggleMenu } from "./link-toggle-menu";
 import { removeHashFromUrl } from "@/utils/functions/removeHashFromUrl";
 import { useState } from "react";
 
@@ -46,29 +46,41 @@ export function MenuToggle() {
         />
       </button>
       <nav
-        className={`flex flex-col items-center bg-black-principal w-full top-[140px] right-0 absolute z-[99] lg:hidden ${menuToggleIsOpened ? "inline" : "hidden"
+        className={`top-[140px] right-0 absolute z-[99] w-full overflow-hidden lg:hidden ${menuToggleIsOpened ? "inline" : "hidden"
           }`}
       >
-        <ul className=" flex flex-col items-center justify-center text-xl font-bold font-lufga text-white w-full list-none leading-7 letter">
-          <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
-            <Link href={"#home"} onClick={handleHideMenuAfterClickOnLink}>Início</Link>
-          </li>
-          <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
-            <Link href={"#about"} onClick={handleHideMenuAfterClickOnLink}>Sobre</Link>
-          </li>
-          <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
-            <Link href={"#services"} onClick={handleHideMenuAfterClickOnLink}>Serviços</Link>
-          </li>
-          <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
-            <Link href={"#projects"} onClick={handleHideMenuAfterClickOnLink}>Projetos</Link>
-          </li>
-          <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
-            <Link href={"#experiences"} onClick={handleHideMenuAfterClickOnLink}>Experiências</Link>
-          </li>
-          <li className="py-4 hover:bg-outline-button w-full text-center transition-all">
-            <Link href={"#contact"} onClick={handleHideMenuAfterClickOnLink}>Contato</Link>
-          </li>
-        </ul>
+        <div className="flex flex-col items-center justify-center text-xl font-bold font-lufga text-white list-none leading-7  w-full">
+          <LinkToggleMenu
+            link={"home"}
+            hideMenuFn={handleHideMenuAfterClickOnLink}
+            title="Início"
+          />
+          <LinkToggleMenu
+            link={"about"}
+            hideMenuFn={handleHideMenuAfterClickOnLink}
+            title="Sobre"
+          />
+          <LinkToggleMenu
+            link={"services"}
+            hideMenuFn={handleHideMenuAfterClickOnLink}
+            title="Serviços"
+          />
+          <LinkToggleMenu
+            link={"projects"}
+            hideMenuFn={handleHideMenuAfterClickOnLink}
+            title="Projetos"
+          />
+          <LinkToggleMenu
+            link={"experiences"}
+            hideMenuFn={handleHideMenuAfterClickOnLink}
+            title="Experiências"
+          />
+          <LinkToggleMenu
+            link={"contact"}
+            hideMenuFn={handleHideMenuAfterClickOnLink}
+            title="Contato"
+          />
+        </div>
       </nav>
     </>
   );
