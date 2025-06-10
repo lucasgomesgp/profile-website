@@ -13,8 +13,9 @@ import { Services } from "@/components/services";
 import { TitleSection } from "@/components/title-section";
 import aboutImg from "../assets/about.png";
 import { getProjectsFromCms } from "@/utils/functions/getProjectsFromCms";
-import logoImg from "../assets/logo.svg";
+import logoImg from "../assets/logo-name.svg";
 import { randomUUID } from "crypto";
+import { LogoAnimated } from "@/components/logo-animated";
 
 export default async function Home() {
   const myExperiences = [
@@ -36,10 +37,10 @@ export default async function Home() {
       date: "Nov - Dez 2021",
       occupation: "Estagiário (Suporte)",
       city: "Juazeiro do Norte - CE"
-    },
+    }
+
   ];
   const projects = await getProjectsFromCms();
-
   return (
     <main className="flex flex-col bg-white items-center overflow-x-hidden">
       <header className="flex items-center justify-between lg:justify-center px-3 py-4 bg-black-principal rounded-full mt-10 max-w-[396px] md:max-w-[680px] lg:max-w-[1200px] w-full mx-8">
@@ -47,9 +48,7 @@ export default async function Home() {
           <LinkHeader title="Início" href={"#home"} />
           <LinkHeader title="Sobre" href={"#about"} />
           <LinkHeader title="Serviços" href={"#services"} />
-          <Link href="#home" className="hover:opacity-70 transition-opacity">
-            <Image src={logoImg} alt="Logo" className="[138px] h-[52px]" />
-          </Link>
+          <LogoAnimated />
           <LinkHeader title="Projetos" href={"#projects"} />
           <LinkHeader title="Experiências" href={"#experiences"} />
           <LinkHeader title="Contato" href={"#contact"} />
@@ -110,7 +109,7 @@ export default async function Home() {
       />
       <section className="flex flex-col gap-[120px] md:gap-[174px] lg:gap-[133px] mt-[118px] mb-[186px] md:my-[160px] lg:mb-[312px] lg:mt-[100px]" id="experiences">
         <TitleSection title="Experiências" onCenter />
-        <div className="flex mt-40 gap-[60px] mobile_l:gap-[100px] md:gap-0 md:mb-32 justify-between lg:gap-32 relative lg:flex-col lg:items-center min-h-full after:absolute after:w-full after:lg:w-[110%] after:border-[2px] after:border-dashed after:border-black after:top-[50%] after:translate-y-[-50%] after:lg:rotate-90">
+        <div className={`flex mt-40 gap-[60px] mobile_l:gap-[100px] md:gap-0 md:mb-32 justify-between lg:gap-32 relative lg:flex-col lg:items-center min-h-full after:absolute after:w-[2px] after:lg:min-h-[120%] after:-top-[10%] after:border after:border-dashed after:bg-black `}>
           {
             myExperiences.map((experience, index) => {
               const isPair = ((index + 1) % 2) === 0;

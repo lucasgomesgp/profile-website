@@ -81,10 +81,8 @@ export function FormMessage() {
       className="flex flex-col gap-[54px] md:gap-[116px] items-center justify-center w-full mb-[132px] md:mb-[264px]"
       id="contact"
     >
-      <h3 className="font-lufga  font-bold text-[32px] md:text-5xl tracking-[4.16px] md:tracking-[6.24px] max-w-[372px] md:max-w-[555px] lg:max-w-[617px] w-full text-center">
-        Ficou interessado?
-        <br />
-        <span className="text-purple-principal">Me mande uma mensagem!</span>
+      <h3 className="font-lufga  text-purple-principal font-bold text-[32px] md:text-4xl tracking-[4.16px] md:tracking-[4.24px] max-w-[372px] md:max-w-[555px] lg:max-w-[617px] w-full text-center">
+        Entre em contato comigo!
       </h3>
       <form
         className="flex flex-col md:flex-row md:flex-wrap lg:flex-col  items-center justify-center gap-[22px] md:gap-[26px] lg:gap-8 px-6 md:px-8 lg:px-0"

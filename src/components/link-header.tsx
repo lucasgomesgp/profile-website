@@ -16,7 +16,7 @@ export function LinkHeader({ title, href }: Props) {
   return (
     <Link
       href={href}
-      className="text-white hover:bg-purple-principal px-10 py-5 rounded-full transition-colors hidden lg:inline"
+      className="text-white hover:bg-purple-principal px-10 py-5 rounded-full transition-colors hidden lg:inline text-xl"
       onClick={removeHashFromUrl}
     >
       {title}
