@@ -1,7 +1,6 @@
 import { ButtonContact } from "./button-contact";
-import Image from "next/image";
 import { TextAnimated } from "@/components/text-animated";
-import profileImg from "../assets/profile.svg";
+import { ProfileImageAnimated } from "./profile-image-animated";
 
 export function Profile() {
   return (
@@ -13,15 +12,8 @@ export function Profile() {
         <h1 className="">Sou Lucas,</h1>
         <TextAnimated />
       </div>
-      <div className="relative w-[396px] h-[458px] md:w-[680px] md:h-[872px] lg:w-[520px] lg:h-[600px]">
-        <Image
-          src={profileImg}
-          alt="Lucas Gomes"
-          quality={100}
-          height={872}
-          width={680}
-          className="w-full h-full animate-right relative transition-all"
-        />
+      <div className="relative flex justify-center w-[396px] h-[458px] md:w-[680px] md:h-[872px] lg:w-[520px] lg:h-[600px]">
+        <ProfileImageAnimated />
         <ButtonContact isInProfile />
       </div>
     </section>

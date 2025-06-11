@@ -2,7 +2,6 @@ import { ButtonCV } from "@/components/button-cv";
 import { ButtonContact } from "@/components/button-contact";
 import { FormMessage } from "@/components/form-message";
 import Image from "next/image";
-import Link from "next/link";
 import { LinkHeader } from "@/components/link-header";
 import { Logos } from "@/components/logos";
 import { MenuToggle } from "@/components/menu-toggle";
