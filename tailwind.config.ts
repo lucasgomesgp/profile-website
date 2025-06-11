@@ -27,8 +27,6 @@ const config: Config = {
         "right": "moveRight 2s ease-in 1",
         "left": "moveLeft 2s ease-in 1",
         "opacity": "opacity 1.5s .5s ease-in 1 forwards",
-        "opacity-md": "opacityMd 1.5s .5s ease-in 1 forwards",
-        "opacity-sm": "opacitySm 1.5s .5s ease-in 1 forwards",
         "text-disapear": "text-disapear 7s ease 1 forwards",
         "text-disapear-delay": "text-disapear-delay 6s ease-in-out 1 forwards",
       },
@@ -81,26 +79,6 @@ const config: Config = {
           "to": {
             "opacity": "1",
             "bottom": "112px",
-          }
-        },
-        "opacitySm": {
-          "from": {
-            "opacity": "0",
-            "bottom": "0",
-          },
-          "to": {
-            "opacity": "1",
-            "bottom": "50px",
-          }
-        },
-        "opacityMd": {
-          "from": {
-            "opacity": "0",
-            "bottom": "0",
-          },
-          "to": {
-            "opacity": "1",
-            "bottom": "350px",
           }
         }
       },
