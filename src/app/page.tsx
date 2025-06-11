@@ -2,8 +2,8 @@ import { ButtonCV } from "@/components/button-cv";
 import { ButtonContact } from "@/components/button-contact";
 import { FormMessage } from "@/components/form-message";
 import Image from "next/image";
-import Link from "next/link";
 import { LinkHeader } from "@/components/link-header";
+import { LogoAnimated } from "@/components/logo-animated";
 import { Logos } from "@/components/logos";
 import { MenuToggle } from "@/components/menu-toggle";
 import { Profile } from "@/components/profile";
@@ -15,7 +15,6 @@ import aboutImg from "../assets/about.png";
 import { getProjectsFromCms } from "@/utils/functions/getProjectsFromCms";
 import logoImg from "../assets/logo-name.svg";
 import { randomUUID } from "crypto";
-import { LogoAnimated } from "@/components/logo-animated";
 
 export default async function Home() {
   const myExperiences = [
